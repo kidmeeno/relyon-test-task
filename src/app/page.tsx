@@ -11,7 +11,6 @@ const HomePage = () => {
   const [error, setError] = useState<string | null>(null); 
 
   useEffect(() => {
-    
     const fetchData = async () => {
       try {
         const response = await fetch('https://dummyjson.com/users?limit=10');
@@ -23,7 +22,6 @@ const HomePage = () => {
         setLoading(false); 
       }
     };
-
     fetchData(); 
   }, []); 
 

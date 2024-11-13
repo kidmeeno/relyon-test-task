@@ -28,7 +28,6 @@ const UserDetails = ({ params }: { params: { id: string } }) => {
         setLoading(false); 
       }
     };
-
     fetchUserData(); 
   }, [id]);
 
